@@ -33,7 +33,7 @@ export default function Home() {
     <div className="min-h-screen">
       {/* Hero Section */}
       <BackgroundPaths
-        title="노마드를 위한 완벽한 도시를 찾아보세요"
+        title="노마드 리스트"
         buttonText="도시 탐색하기"
         onButtonClick={scrollToFilter}
         stats={[
