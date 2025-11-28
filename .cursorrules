@@ -1,0 +1,36 @@
+# Project Rules
+
+## Communication
+- **Thinking & Responding**: Always think and respond in Korean. (생각하는 과정과 답변을 모두 한국어로 진행해주세요.)
+
+## Project Overview
+- **Framework**: Next.js 16 (App Router)
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS 4
+- **UI Components**: Shadcn UI (Radix UI based)
+- **Icons**: Lucide React
+- **Package Manager**: pnpm
+
+## Coding Standards
+- **Components**: Use Functional Components with TypeScript interfaces.
+- **Styling**: Use Tailwind CSS utility classes. Avoid inline styles. Use `cn()` for class merging.
+- **State Management**: Use React Hooks (`useState`, `useEffect`, etc.).
+- **File Naming**:
+  - Files: `kebab-case` (e.g., `button.tsx`, `user-card.tsx`).
+  - Directories: `kebab-case`.
+
+## Project Structure
+- `app/`: Next.js App Router pages (`page.tsx`), layouts (`layout.tsx`), and globals styles.
+- `components/ui/`: Reusable UI components (Button, Card, etc.) mostly from Shadcn UI.
+- `components/`: Feature-specific components (e.g., `theme-provider.tsx`).
+- `lib/`: Utility functions (e.g., `utils.ts` for `cn` helper).
+- `hooks/`: Custom React hooks (e.g., `use-mobile.ts`).
+- `public/`: Static assets (images in `city/`, icons).
+- `styles/`: Global styles (though `app/globals.css` is main entry).
+
+## Preferred Practices
+- **Imports**: Use absolute imports with `@/` alias (e.g., `import { Button } from "@/components/ui/button"`).
+- **Class Merging**: Always use the `cn()` utility from `@/lib/utils` when accepting `className` props to ensure Tailwind classes merge correctly.
+- **Icons**: Use icons from `lucide-react`.
+- **Accessibility**: Maintain accessibility standards provided by Radix UI primitives.
+- **Images**: Use standard `<img>` tag or Next.js `<Image>` component (currently `<img>` is used in `page.tsx`).
