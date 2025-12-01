@@ -14,7 +14,11 @@
       "Bash(pnpm list:*)",
       "Bash(pnpm add:*)",
       "Bash(git init:*)",
-      "Bash(git add:*)"
+      "Bash(git add:*)",
+      "Bash(git commit -m \"$(cat <<''EOF''\nfeat: 노마드 리스트 초기 프로젝트 설정\n\n- Next.js 16 + React 19 + TypeScript 5 + Tailwind CSS v4 기반\n- shadcn/ui 컴포넌트 라이브러리 통합 (58개 컴포넌트)\n- 16개 도시 데이터 및 대륙별 필터링 기능\n- 다크/라이트 테마 지원\n- Unsplash API 이미지 다운로드 스크립트\n- 한국어 UI 현지화\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)\n\nCo-Authored-By: Claude <noreply@anthropic.com>\nEOF\n)\")",
+      "Bash(git remote add:*)",
+      "Bash(git push:*)",
+      "Bash(git commit:*)"
     ],
     "deny": [],
     "ask": []
